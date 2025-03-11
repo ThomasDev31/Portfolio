@@ -4,138 +4,172 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Ceci est mon porfolio étudiant.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Portfolio Thomas Tissier</title>
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-        <header>
-
+        <div class="burger">
+            <div class="barBlack " ></div>
+            <div class="barBlack"></div>
+            <div class="barBlack"></div>
+        </div>
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+        <header id="nav" class="white">
+            <nav >
+                <ul>
+                    <li><a href="#me" class="link">À propos de moi</a></li>
+                    <li><a href="#skills" class="link">Compétences</a></li>
+                    <li><a href="#projets" class="link">Réalisations</a></li>
+                    <li><a href="#contact" class="link">Projets</a></li>
+                    <li>
+                        
+                    </li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fa-solid fa-toggle-on display"></i>
+                <i class="fa-solid fa-toggle-off displaynone"></i>
+            </div>
         </header>
+        
         <main>
             <div class="container-sider">
                 <div class="content-sider">
                     <h1>Thomas Tissier</h1>
                     <p>Étudiant en tant que développeur full-stack</p>
+                    <button id="show">Voir</button>
                 </div>
+                
             </div>
-            <div class="section white">
-                <article class="element flex">
-                    <div class="w40">
-                        <h2>À propos de moi</h2>
-                    </div>
-                    <div class="w60">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita dolorum iusto est, officia, a quam magnam ducimus optio tempore deserunt ipsam! Maxime commodi nemo, repellendus earum perspiciatis impedit similique aliquid ullam odio, veniam cum, laudantium sequi corporis eaque. Mollitia hic autem cum, tempora inventore quaerat enim perspiciatis culpa repellendus? Molestiae totam quia reiciendis ratione sapiente rem dolor beatae nostrum?</p>
-                    </div>  
-                </article>
-            </div>
-            <div class="section dark">
-                <article class="element compt">
-                    <h2>Découvrez mes compétences</h2>
-                        <div class="container-skills">
-                            <div class="skills">
-                                <div class="w25 skill">
-                                    <img src="./assets/img/html.png" alt="Logo de html." >
-                                    <p>HTML</p>
-                                </div>
-                                <div class="w25 skill">
-                                    <img src="./assets/img/css-3.png" alt="Logo de css." >
-                                    <p>CSS</p>
-                                </div>
-                            
-                                <div class="w25 skill">
-                                    <img src="./assets/img/js.png" alt="Logo de JavaScript." >
-                                    <p>JavaScript</p>
-                                </div>
-                            </div>
-                            <div class="skills">
-                                <div class="w25 skill">
-                                    <img src="./assets/img/php.png" alt="Logo de php." >
-                                    <p>PHP</p>
-                                </div>
-                                <div class="w25 skill">
-                                    <img src="./assets/img/sql.png" alt="Logo de SQL." >
-                                    <p>SQL</p>
-                                </div>
-                            </div>
-                            <div class="skills">
-                                <div class="w25 skill">
-                                    <img src="./assets/img/react.png" alt="Logo de React.js." >
-                                    <p>React.js</p>
-                                </div>
-                                <div class="w25 skill">
-                                    <img src="./assets/img/vuejs.png" alt="Logo de Vue.js." >
-                                    <p>Vue.js</p>
-                                </div>
-                            
-                                <div class="w25 skill">
-                                    <img src="./assets/img/symfony.png" alt="Logo de Symfony." >
-                                    <p>Symfony</p>
-                                </div>
-                            </div>
+            <div class="container-global">
+                <div class="section white" id="me">
+                    <article class="element flex">
+                        <div class="w40">
+                            <h2 class="text-black">À propos de moi</h2>
                         </div>
-                </article>
-            </div>
-            <div class="section white">
-                <article class="element text-center">
-                    <h2>Mes réalisations</h2>
-                    <div class="flex space-between">
-                        <div class="w32">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita dolorum iusto est, officia, a quam magnam ducimus optio tempore deserunt ipsam! Maxime commodi nemo, repellendus earum perspiciatis impedit similique aliquid ullam odio, veniam cum, laudantium sequi corporis eaque. Mollitia hic autem cum, tempora inventore quaerat enim perspiciatis culpa repellendus? Molestiae totam quia reiciendis ratione sapiente rem dolor beatae nostrum?</p>
-                            
+                        <div class="w60" >
+                            <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita dolorum iusto est, officia, a quam magnam ducimus optio tempore deserunt ipsam! Maxime commodi nemo, repellendus earum perspiciatis impedit similique aliquid ullam odio, veniam cum, laudantium sequi corporis eaque. Mollitia hic autem cum, tempora inventore quaerat enim perspiciatis culpa repellendus? Molestiae totam quia reiciendis ratione sapiente rem dolor beatae nostrum?</p>
                         </div>  
-                        <div class="w32">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita dolorum iusto est, officia, a quam magnam ducimus optio tempore deserunt ipsam! Maxime commodi nemo, repellendus earum perspiciatis impedit similique aliquid ullam odio, veniam cum, laudantium sequi corporis eaque. Mollitia hic autem cum, tempora inventore quaerat enim perspiciatis culpa repellendus? Molestiae totam quia reiciendis ratione sapiente rem dolor beatae nostrum?</p>
-                        </div>  
-                    </div>
-                </article>
-            </div>
-            <div class="section dark ">
-                <div class="text-center">
-                    <h2>Mes réalisation</h2>
-                    <article class="element text-center flex wrap gap20">
-                        <div class="w32 realisation">
-                            <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
-                                <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
-                                <h3>Projet cours Vitrine d'un restaurant</h3> 
-                            </a>
-                        </div>
-                        <div class="w32 realisation">
-                            <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
-                                <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
-                                <h3>Projet cours Vitrine d'un restaurant</h3> 
-                            </a>
-                        </div>
-                        <div class="w32 realisation">
-                            <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
-                                <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
-                                <h3>Projet cours Vitrine d'un restaurant</h3> 
-                            </a>
-                        </div>
-                        <div class="w32 realisation">
-                            <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
-                                <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
-                                <h3>Projet cours Vitrine d'un restaurant</h3> 
-                            </a>
-                        </div>
-                        <div class="w32 realisation">
-                            <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
-                                <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
-                                <h3>Projet cours Vitrine d'un restaurant</h3> 
-                            </a>
-                        </div>
-                        <div class="w32 realisation">
-                            <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
-                                <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
-                                <h3>Projet cours Vitrine d'un restaurant</h3> 
-                            </a>
+                    </article>
+                </div>
+                <div class="section dark" id="skills">
+                    <article class="element compt">
+                        <h2 >Découvrez mes compétences</h2>
+                            <div class="container-skills">
+                                <div class="skills">
+                                    <div class="w25 skill">
+                                        <img src="./assets/img/html.png" alt="Logo de html." >
+                                        <p class="text-black">HTML</p>
+                                    </div>
+                                    <div class="w25 skill">
+                                        <img src="./assets/img/css-3.png" alt="Logo de css." >
+                                        <p class="text-black">CSS</p>
+                                    </div>
+                                
+                                    <div class="w25 skill">
+                                        <img src="./assets/img/js.png" alt="Logo de JavaScript." >
+                                        <p class="text-black">JavaScript</p>
+                                    </div>
+                                </div>
+                                <div class="skills">
+                                    <div class="w25 skill">
+                                        <img src="./assets/img/php.png" alt="Logo de php." >
+                                        <p class="text-black">PHP</p>
+                                    </div>
+                                    <div class="w25 skill">
+                                        <img src="./assets/img/sql.png" alt="Logo de SQL." >
+                                        <p class="text-black">SQL</p>
+                                    </div>
+                                </div>
+                                <div class="skills">
+                                    <div class="w25 skill">
+                                        <img src="./assets/img/react.png" alt="Logo de React.js." >
+                                        <p class="text-black">React.js</p>
+                                    </div>
+                                    <div class="w25 skill">
+                                        <img src="./assets/img/vuejs.png" alt="Logo de Vue.js." >
+                                        <p class="text-black">Vue.js</p>
+                                    </div>
+                                
+                                    <div class="w25 skill">
+                                        <img src="./assets/img/symfony.png" alt="Logo de Symfony." >
+                                        <p class="text-black">Symfony</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </article>
+                </div>
+                <div class="section white" id="projets">
+                    <article class="element text-center">
+                        <h2 class="text-black">Mes réalisations</h2>
+                        <div class="flex space-between">
+                            <div class="w32">
+                                <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita dolorum iusto est, officia, a quam magnam ducimus optio tempore deserunt ipsam! Maxime commodi nemo, repellendus earum perspiciatis impedit similique aliquid ullam odio, veniam cum, laudantium sequi corporis eaque. Mollitia hic autem cum, tempora inventore quaerat enim perspiciatis culpa repellendus? Molestiae totam quia reiciendis ratione sapiente rem dolor beatae nostrum?</p>
+                                
+                            </div>  
+                            <div class="w32">
+                                <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita dolorum iusto est, officia, a quam magnam ducimus optio tempore deserunt ipsam! Maxime commodi nemo, repellendus earum perspiciatis impedit similique aliquid ullam odio, veniam cum, laudantium sequi corporis eaque. Mollitia hic autem cum, tempora inventore quaerat enim perspiciatis culpa repellendus? Molestiae totam quia reiciendis ratione sapiente rem dolor beatae nostrum?</p>
+                            </div>  
                         </div>
                     </article>
+                </div>
+                <div class="section dark ">
+                    <div class="text-center">
+                        <h2 >Mes Projets</h2>
+                        <article class="element text-center flex wrap gap20">
+                            <div class="w32 realisation">
+                                <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
+                                    <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
+                                    <h3>Projet cours Vitrine d'un restaurant</h3> 
+                                </a>
+                            </div>
+                            <div class="w32 realisation">
+                                <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
+                                    <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
+                                    <h3>Projet cours Vitrine d'un restaurant</h3> 
+                                </a>
+                            </div>
+                            <div class="w32 realisation">
+                                <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
+                                    <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
+                                    <h3>Projet cours Vitrine d'un restaurant</h3> 
+                                </a>
+                            </div>
+                            <div class="w32 realisation">
+                                <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
+                                    <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
+                                    <h3>Projet cours Vitrine d'un restaurant</h3> 
+                                </a>
+                            </div>
+                            <div class="w32 realisation">
+                                <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
+                                    <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
+                                    <h3>Projet cours Vitrine d'un restaurant</h3> 
+                                </a>
+                            </div>
+                            <div class="w32 realisation">
+                                <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
+                                    <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
+                                    <h3>Projet cours Vitrine d'un restaurant</h3> 
+                                </a>
+                            </div>
+                        </article>
+                    </div>  
+                </div>
+                <div class="section white" id="contact">
+                    <div class="text-center">
+
+                    </div>
                 </div>  
             </div>
+            <audio src="./assets/son/netflix.mp3"></audio>
         </main>
         <footer>
 
         </footer>
+        <script src="js/app.js"></script>
     </body>
-    <script src="js/app.js"></script>
 </html>
