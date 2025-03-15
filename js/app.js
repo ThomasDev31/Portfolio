@@ -384,26 +384,27 @@ navLinks.forEach(link => {
 });
 
 
-
+/*
+*Gestion de l'affichage des information après avoir cliquer sur le *logo
+*/
 
 const logos = document.querySelectorAll('.gmail-logo, .fa-linkedin, .fa-mobile-screen-button, .fa-github');
 const contents = document.querySelectorAll('.content-logo');
 
-// Ajouter un événement de clic à chaque logo
+
 logos.forEach(logo => {
     logo.addEventListener('click', () => {
-        // Récupérer l'ID du logo (gmail ou linkedin)
+
         const logoId = logo.getAttribute('data-id');
         
-        // Trouver le conteneur de contenu correspondant à ce logo
+
         const content = document.querySelector(`.content-logo.${logoId}`);
-        
-        // Si le contenu est actuellement caché, l'afficher, sinon le cacher
+
         if (content.style.display === 'none' || content.style.display === '') {
-            content.style.display = 'block';  // Afficher le contenu
+            content.style.display = 'block';  
             logo.classList.add('scale')
         } else {
-            content.style.display = 'none';   // Masquer le contenu
+            content.style.display = 'none';   
             logo.classList.remove('scale')
         }
     });
