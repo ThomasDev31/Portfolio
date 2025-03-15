@@ -7,162 +7,200 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="icon" href="./assets/favicon/favicon-32px.png" sizes="32x32" type="image/png">
         <link rel="icon" href="./assets/favicon/favicon-16px.png" sizes="16x16" type="image/png">
-        <link rel="icon" sizes="128x128" href="./assets/favicon/favicon-128px.png">
-        <link rel="icon" sizes="512x512" href="./assets/favicon/favicon-512px.png">
-        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="icon" href="./assets/favicon/favicon-128px.png" sizes="128x128" type="image/png">
+        <link rel="icon" href="./assets/favicon/favicon-512px.png" sizes="512x512" type="image/png">
+        
+        <link rel="apple-touch-icon" sizes="128x128" href="./assets/favicon/favicon-128px.png">
+        <link rel="stylesheet" href="./styles/styles.css">
         <title>Portfolio Thomas Tissier</title>
     </head>
     <body>
-        <div class="burger">
-            <div class="barBlack " ></div>
-            <div class="barBlack"></div>
-            <div class="barBlack"></div>
+        <div class="container-burger displaynone">
+            <div class="burger">
+                <div class="barBlack"></div>
+                <div class="barBlack"></div>
+                <div class="barBlack"></div>
+            </div>
         </div>
         <div class="arrow">
             <i class="fa-solid fa-arrow-up"></i>
         </div>
         <header id="nav" class="white">
-            <nav >
-                <ul>
-                    <li><a href="#me" class="link">À propos de moi</a></li>
-                    <li><a href="#skills" class="link">Compétences</a></li>
-                    <li><a href="#projets" class="link">Réalisations</a></li>
-                    <li><a href="#contact" class="link">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="icons">
-                <i class="fa-solid fa-toggle-on display"></i>
-                <i class="fa-solid fa-toggle-off displaynone"></i>
+            <div class="element">
+                <nav >
+                    <ul >
+                        <li id="info"><a href="#me" class="link size-nav" >À propos de moi</a></li>
+                        <li id="skill"><a href="#skills" class="link size-nav">Compétences</a></li>
+                        <li id="projet"><a href="#projets" class="link size-nav">Réalisations</a></li>
+                        <li id="contact-me"><a href="#contact" class="link size-nav">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
+                <div class="icons">
+                    <i class="fa-solid fa-toggle-on display"></i>
+                    <i class="fa-solid fa-toggle-off displaynone"></i>
+                </div>
         </header>
         
-        <main>
-            <div class="container-sider">
-                <div class="content-sider">
-                    <h1>Thomas Tissier</h1>
-                    <p>Étudiant en tant que développeur full-stack</p>
-                    <button id="show">Voir</button>
+        <main class="main bg_size">
+            <div class="container-sider ">
+                <div class="content-sider ">
+                    <div class="container-title-bis">
+                        <h1 class=" size-h1">Thomas Tissier</h1>
+                        <span class="write"></span>
+                    </div>
+                    <div class="container-paragraphe">
+                        <p class="move size-title-p">Étudiant en tant que développeur full-stack</p>
+                        <span class="write"></span>
+                    </div>
+                    <button id="show" class="size-btn">Voir</button>
+                    <a href="./assets/CV/CV_Thomas_Tissier.pdf" download>
+                        <button class="download-btn"><span class="ctn-btn">Télécharger mon CV</span></button>
+                    </a>
                 </div>
+                
                 
             </div>
             <div class="container-global">
                 <div class="section white" id="me">
-                    <article class="element flex">
-                        <div class="w40">
-                            <h2 class="text-black">À propos de moi</h2>
+                    <article class="element">
+                        <div class="container-title">
+                            <h2 class="text-black size-h2">À propos de moi</h2>
                         </div>
-                        <div class="w60" >
-                            <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita dolorum iusto est, officia, a quam magnam ducimus optio tempore deserunt ipsam! Maxime commodi nemo, repellendus earum perspiciatis impedit similique aliquid ullam odio, veniam cum, laudantium sequi corporis eaque. Mollitia hic autem cum, tempora inventore quaerat enim perspiciatis culpa repellendus? Molestiae totam quia reiciendis ratione sapiente rem dolor beatae nostrum?</p>
+                        <div class="container-p" >
+                            <p class="text-black size-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita dolorum iusto est, officia, a quam magnam ducimus optio tempore deserunt ipsam! Maxime commodi nemo, repellendus earum perspiciatis impedit similique aliquid ullam odio, veniam cum, laudantium sequi corporis eaque. Mollitia hic autem cum, tempora inventore quaerat enim perspiciatis culpa repellendus? Molestiae totam quia reiciendis ratione sapiente rem dolor beatae nostrum?</p>
                         </div>  
                     </article>
                 </div>
                 <div class="section dark" id="skills">
                     <article class="element compt">
-                        <h2 >Découvrez mes compétences</h2>
+                        <div class="container-title">
+                            <h2 class="size-h2">Découvrez mes compétences</h2>
+                        </div>
                             <div class="container-skills">
                                 <div class="skills">
-                                    <div class="w25 skill">
+                                    <div class="skill">
                                         <img src="./assets/img/html.png" alt="Logo de html." >
-                                        <p class="text-black">HTML</p>
+                                        <p class="text-black size-p">HTML</p>
                                     </div>
-                                    <div class="w25 skill">
+                                    <div class="skill">
                                         <img src="./assets/img/css-3.png" alt="Logo de css." >
-                                        <p class="text-black">CSS</p>
+                                        <p class="text-black size-p">CSS</p>
                                     </div>
                                 
-                                    <div class="w25 skill">
+                                    <div class="skill">
                                         <img src="./assets/img/js.png" alt="Logo de JavaScript." >
-                                        <p class="text-black">JavaScript</p>
+                                        <p class="text-black size-p">JavaScript</p>
                                     </div>
                                 </div>
                                 <div class="skills">
-                                    <div class="w25 skill">
+                                    <div class="skill">
                                         <img src="./assets/img/php.png" alt="Logo de php." >
-                                        <p class="text-black">PHP</p>
+                                        <p class="text-black size-p">PHP</p>
                                     </div>
-                                    <div class="w25 skill">
+                                    <div class="skill">
                                         <img src="./assets/img/sql.png" alt="Logo de SQL." >
-                                        <p class="text-black">SQL</p>
+                                        <p class="text-black size-p">SQL</p>
                                     </div>
                                 </div>
                                 <div class="skills">
-                                    <div class="w25 skill">
+                                    <div class="skill">
                                         <img src="./assets/img/react.png" alt="Logo de React.js." >
-                                        <p class="text-black">React.js</p>
+                                        <p class="text-black size-p">React.js</p>
                                     </div>
-                                    <div class="w25 skill">
+                                    <div class="skill">
                                         <img src="./assets/img/vuejs.png" alt="Logo de Vue.js." >
-                                        <p class="text-black">Vue.js</p>
+                                        <p class="text-black size-p">Vue.js</p>
                                     </div>
                                 
-                                    <div class="w25 skill">
+                                    <div class="skill">
                                         <img src="./assets/img/symfony.png" alt="Logo de Symfony." >
-                                        <p class="text-black">Symfony</p>
+                                        <p class="text-black size-p">Symfony</p>
                                     </div>
                                 </div>
                             </div>
                     </article>
                 </div>
-                <div class="section white" id="projets">
+                <div id="projets" >
+                <div class="section white" >
                     <article class="element text-center">
-                        <h2 class="text-black">Mes réalisations</h2>
-                        <div class="flex space-between">
-                            <div class="w32">
-                                <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita dolorum iusto est, officia, a quam magnam ducimus optio tempore deserunt ipsam! Maxime commodi nemo, repellendus earum perspiciatis impedit similique aliquid ullam odio, veniam cum, laudantium sequi corporis eaque. Mollitia hic autem cum, tempora inventore quaerat enim perspiciatis culpa repellendus? Molestiae totam quia reiciendis ratione sapiente rem dolor beatae nostrum?</p>
+                        <div class="container-title">
+                            <h2 class="text-black size-h2">Mes réalisations</h2>
+                        </div>
+                        <div class="space-between">
+                            <div class="container-p">
+                                <p class="text-black size-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita dolorum iusto est, officia, a quam magnam ducimus optio tempore deserunt ipsam! Maxime commodi nemo, repellendus earum perspiciatis impedit similique aliquid ullam odio, veniam cum, laudantium sequi corporis eaque. Mollitia hic autem cum, tempora inventore quaerat enim perspiciatis culpa repellendus? Molestiae totam quia reiciendis ratione sapiente rem dolor beatae nostrum?</p>
                                 
                             </div>  
-                            <div class="w32">
-                                <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita dolorum iusto est, officia, a quam magnam ducimus optio tempore deserunt ipsam! Maxime commodi nemo, repellendus earum perspiciatis impedit similique aliquid ullam odio, veniam cum, laudantium sequi corporis eaque. Mollitia hic autem cum, tempora inventore quaerat enim perspiciatis culpa repellendus? Molestiae totam quia reiciendis ratione sapiente rem dolor beatae nostrum?</p>
+                            <div class="container-p">
+                                <p class="text-black size-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita dolorum iusto est, officia, a quam magnam ducimus optio tempore deserunt ipsam! Maxime commodi nemo, repellendus earum perspiciatis impedit similique aliquid ullam odio, veniam cum, laudantium sequi corporis eaque. Mollitia hic autem cum, tempora inventore quaerat enim perspiciatis culpa repellendus? Molestiae totam quia reiciendis ratione sapiente rem dolor beatae nostrum?</p>
                             </div>  
                         </div>
                     </article>
                 </div>
-                <div class="section dark ">
+                <div class="section dark " >
                     <div class="text-center">
-                        <h2 >Mes Projets</h2>
+                        <div class="container-title" > 
+                            <h2 class="size-h2" >Mes Projets</h2>
+                        </div>
                         <article class="element text-center flex wrap gap20">
-                            <div class="w32 realisation">
+                            <div class="realisation">
                                 <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
                                     <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
-                                    <h3>Projet cours Vitrine d'un restaurant</h3> 
+                                    <h3 class="size-h3">Projet cours Vitrine d'un restaurant</h3> 
                                 </a>
                             </div>
-                            <div class="w32 realisation">
+                            <div class="realisation">
                                 <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
                                     <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
-                                    <h3>Projet cours Vitrine d'un restaurant</h3> 
+                                    <h3 class="size-h3">Projet cours Vitrine d'un restaurant</h3> 
                                 </a>
                             </div>
-                            <div class="w32 realisation">
+                            <div class="realisation">
                                 <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
                                     <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
-                                    <h3>Projet cours Vitrine d'un restaurant</h3> 
-                                </a>
-                            </div>
-                            <div class="w32 realisation">
-                                <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
-                                    <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
-                                    <h3>Projet cours Vitrine d'un restaurant</h3> 
-                                </a>
-                            </div>
-                            <div class="w32 realisation">
-                                <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
-                                    <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
-                                    <h3>Projet cours Vitrine d'un restaurant</h3> 
-                                </a>
-                            </div>
-                            <div class="w32 realisation">
-                                <a href="https://github.com/ThomasDev31/Portfolio" target="_blank">
-                                    <img src="./assets/img/location.jpg" alt="Photo d'un restaurant">
-                                    <h3>Projet cours Vitrine d'un restaurant</h3> 
+                                    <h3 class="size-h3">Projet cours Vitrine d'un restaurant</h3> 
                                 </a>
                             </div>
                         </article>
                     </div>  
                 </div>
+            </div>
                 <div class="section white" id="contact">
                     <div class="text-center">
-
+                        <h2 class="text-black size-h2">Contact</h2>
+                        <div class="contacts-perso">
+                            <article class="contact-personnel">
+                                <div class="logo-container gmail">
+                                    <i class="fab fa-google gmail-logo"  data-id="gmail"></i>
+                                    <div class="content-logo gmail white">
+                                        <h3 class="text-black size-h3">E-mail</h3>
+                                        <a href="mailto:tissierthomas42@gmail.com?subject=Contactez&body=Bonjour Thomas,%0A%0A" class="text-black size-p">tissierthomas42@gmail.com</a>
+                                    </div>
+                                </div> 
+                                <div class="logo-container linkedin">
+                                    <i class="fa-brands fa-linkedin" data-id="linkedin"></i>
+                                    <div class="content-logo linkedin white">
+                                        <h3 class="text-black size-h3">Profil linkedin</h3>
+                                        <a href="https://www.linkedin.com/in/thomas-tissier/"  target="_blank "class="text-black size-p"> Thomas Tissier</a>
+                                    </div>
+                                </div>
+                                <div class="logo-container linkedin">
+                                    <i class="fa-solid fa-mobile-screen-button" data-id="tel"></i>
+                                    <div class="content-logo tel white">
+                                        <h3 class="text-black size-h3">Téléphone</h3>
+                                        <p class="text-black size-p">06.38.38.54.31</p>
+                                    </div>
+                                </div>
+                                <div class="logo-container git">
+                                    <i class="fa-brands fa-github" data-id="git"></i>
+                                    <div class="content-logo git white">
+                                        <h3 class="text-black size-h3">GitHub</h3>
+                                        <a href="https://github.com/ThomasDev31?tab=repositories"  target="_blank "class="text-black size-p"> Mon gitHub</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>  
             </div>
@@ -171,6 +209,6 @@
         <footer>
 
         </footer>
-        <script src="js/app.js"></script>
+        <script src="./js/app.js"></script>
     </body>
 </html>
