@@ -33,22 +33,21 @@ body{
 body{
     background-image: url('../assets/img/sidermobi.jpg'), linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4)) ; 
     background-repeat: no-repeat;
-    z-index: -1;
-    background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
     background-blend-mode: overlay; 
+    background-attachment: fixed;
+    background-size:cover ;
 }
 
 .container-sider{
     width : 100%;
-    height : 100vh;
+    height : 100vh; 
     aspect-ratio : 16/9; 
     position : relative;
 }
 
 .download-btn {
-    background-color:rgba(53, 115, 240);
+    background-color:rgb(53, 115, 240);
     color: white;
     padding: 14px 20px;
     border: none;
@@ -184,9 +183,10 @@ h2{
 
 .container-p{
     width:100%;
-    margin:auto;
-    margin-bottom: 30px;
+
+    margin: 0px auto 30px auto;
 }
+
 
 .gap20{
     column-gap:20px;
@@ -533,9 +533,7 @@ header nav ul {
 header nav ul li{
 width:50%
 }
-.size-p{
-    text-wrap:balance;
-}
+
 
 i{
     cursor: pointer;

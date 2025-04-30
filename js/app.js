@@ -11,6 +11,7 @@ let text = document.querySelector('h1');
 let textPara = document.querySelector('.move')
 let btnDowload = document.querySelector('.download-btn')
 btnDowload.classList.add('displaynone')
+
 let contenuPara = textPara.innerHTML
 textPara.innerHTML = ''
 
@@ -238,8 +239,8 @@ function enableDarkMode() {
     })
     containerburger.classList.remove('white')
     containerburger.classList.add('bg-dark')
-
-    localStorage.setItem('darMode', "enabled")
+    
+    localStorage.setItem('darkMode', "enabled")
 }
 
 /*
@@ -273,7 +274,7 @@ function disabledDarkMode() {
     containerburger.classList.add('white')
     containerburger.classList.remove('bg-dark')
 
-    localStorage.setItem('darMode', "disabled")
+    localStorage.setItem('darkMode', "disabled")
     
 }
 
@@ -345,7 +346,7 @@ function handleScroll() {
         const rect = item.element.getBoundingClientRect();
         const elementCenter = rect.top + rect.height / 2;
 
-        if (Math.abs(elementCenter - windowCenter) <= 300) {
+        if (Math.abs(elementCenter - windowCenter) <= 450) {
             item.target.classList.add('nav-actived');
         }
     });
@@ -384,27 +385,26 @@ navLinks.forEach(link => {
 });
 
 
-/*
-*Gestion de l'affichage des information après avoir cliquer sur le *logo
-*/
+
 
 const logos = document.querySelectorAll('.gmail-logo, .fa-linkedin, .fa-mobile-screen-button, .fa-github');
 const contents = document.querySelectorAll('.content-logo');
 
-
+// Ajouter un événement de clic à chaque logo
 logos.forEach(logo => {
     logo.addEventListener('click', () => {
-
+        // Récupérer l'ID du logo (gmail ou linkedin)
         const logoId = logo.getAttribute('data-id');
         
-
+        // Trouver le conteneur de contenu correspondant à ce logo
         const content = document.querySelector(`.content-logo.${logoId}`);
-
+        
+        // Si le contenu est actuellement caché, l'afficher, sinon le cacher
         if (content.style.display === 'none' || content.style.display === '') {
-            content.style.display = 'block';  
+            content.style.display = 'block';  // Afficher le contenu
             logo.classList.add('scale')
         } else {
-            content.style.display = 'none';   
+            content.style.display = 'none';   // Masquer le contenu
             logo.classList.remove('scale')
         }
     });
